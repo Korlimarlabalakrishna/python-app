@@ -85,7 +85,7 @@ Thanks,
 DevOps Team. ''',  
                 recipientProviders: [developers()],  
                 replyTo: 'krishna123.korlimarla@gmail.com',  
-                subject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!",  
+                subject: "${env.PROJECT_NAME} - Build # ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}!", 
                 to: 'bala.korlimarla@yahoo.com' 
         } 
     } 
