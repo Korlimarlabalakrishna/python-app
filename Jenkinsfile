@@ -2,6 +2,7 @@ pipeline {
     agent { label 'python-app' } 
 
     environment {
+        PROJECT_NAME = "svcomforts"
         IMAGE_NAME = "korlimarlabalakrishna/python-app"
         DOCKER_HUB_USER = "korlimarlabalakrishna"
         DOCKER_HUB_REPO = "python-app"
@@ -77,8 +78,8 @@ pipeline {
             emailext attachLog: true,  
                 body: '''Hello, 
 
-svcomforts deployment completed. Kindly check and confirm the same.  
-svcomforts URL: http://23.20.2.187:31111/ 
+python-app deployment completed. Kindly check and confirm the same.  
+python-app URL: http://23.20.2.187:31111/ 
 
 Thanks,  
 DevOps Team. ''',  
