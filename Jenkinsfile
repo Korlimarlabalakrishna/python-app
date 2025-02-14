@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'python-app’}
+    agent {label 'python-app'}
     stages { 
         stage('Git Checkout') {
             steps { 
