@@ -83,9 +83,9 @@ svcomforts URL: http://23.20.2.187:31111/
 Thanks,  
 DevOps Team. ''',  
                 recipientProviders: [developers()],  
-                replyTo: 'info.vmoksha@gmail.com',  
+                replyTo: 'krishna123.korlimarla@gmail.com',  
                 subject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!",  
-                to: 'gokul.reddy@vmokshagroup.com,bala.korlimarla@vmokshagroup.com' 
+                to: 'bala.korlimarla@yahoo.com' 
         } 
     } 
 }
