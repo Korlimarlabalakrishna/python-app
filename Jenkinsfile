@@ -2,7 +2,7 @@ pipeline {
     agent { label 'python-app' } 
 
     environment {
-        PROJECT_NAME = "svcomforts"
+        PROJECT_NAME = "python-app"
         IMAGE_NAME = "korlimarlabalakrishna/python-app"
         DOCKER_HUB_USER = "korlimarlabalakrishna"
         DOCKER_HUB_REPO = "python-app"
@@ -85,7 +85,7 @@ Thanks,
 DevOps Team. ''',  
                 recipientProviders: [developers()],  
                 replyTo: 'krishna123.korlimarla@gmail.com',  
-                subject: "${env.PROJECT_NAME} - Build # ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}!", 
+                subject: "${env.JOB_NAME} - Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}!", 
                 to: 'bala.korlimarla@yahoo.com' 
         } 
     } 
