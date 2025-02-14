@@ -10,7 +10,7 @@ pipeline {
     stages { 
         stage('Git Checkout') {
             steps { 
-                git credentialsId: 'e613e221-6ac1-4d07-8acf-297188969b12', url: 'https://github.com/Korlimarlabalakrishna/svcomforts.git'
+                git credentialsId: '1a8abd76-2c99-4c88-9433-f21de6954aef', url: 'https://github.com/Korlimarlabalakrishna/python-app.git'
             }
         }
 
